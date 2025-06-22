@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #d2dfe8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  background-color: #fffeff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  /* color: #222f4f; */
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e3e8ec;
+  border-radius: 10px;
+  /* padding-left: 20px; */
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #232e4f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background-image: url(img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+}
+
+ul li.checked {
+  color: #232e4f;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(img/checked-imgB.jpg);
+}
+
+ul li deleIcon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  font-size: 22px;
+  color: #545557;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul li deleIcon:hover {
+  background: #232e4f;
+  color: white;
+  border-radius: 10px;
+}
