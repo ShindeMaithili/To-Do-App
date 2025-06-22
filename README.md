@@ -9,13 +9,6 @@ This is a simple To-Do List Application built using HTML, CSS, and JavaScript. I
 - Delete tasks
 - Tasks remain after refreshing
 
-📂 PROJECT STRUCTURE
-
-📁 To-Do-App
-├── 📄 index.html // Main HTML structure
-├── 📄 style.css // Styling of the app
-├── 📄 app.js // Logic for task handling
-├── 📁 img/ // Checked and unchecked icons
 
  🛠️ HOW IT WORKS
 
